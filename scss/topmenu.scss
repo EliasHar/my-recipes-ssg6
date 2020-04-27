@@ -1,9 +1,5 @@
 $myColor: rgb(126, 39, 111);
 
-.menuInput {
-    display: none;
-}
-
 .menuLabel {
     position: fixed;
     top: 0;
@@ -60,7 +56,11 @@ $myColor: rgb(126, 39, 111);
 .topmenu a.current {
     color: #ed5565;
 }
-
+@media screen and (min-width:40em) {
+    .menuInput, .menuLabel {
+        display: none;
+    }
+}
 @media screen and (min-width:48em) {
     .topnav {
         margin: 1em 0 0 2em;
